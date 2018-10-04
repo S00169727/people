@@ -7,18 +7,18 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace people.Pages
 {
-    public class handlerdemoModel : PageModel
+    public class namegreetingModel : PageModel
     {
-        public string Message { get; set; } = "";
+        public string FirstName { get; set; } 
 
         public void OnGet()
         {
-            Message = "HTTP request was a GET";
+
         }
 
-        public void OnPost()
+        public void OnPost(string firstname)
         {
-            Message = "HTTP request was a POST";
+            FirstName = $"Hello {firstname}";
         }
     }
 }

@@ -3,3 +3,25 @@
 @{
     ViewData["Title"] = "handlerdemo";
 }
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>handlerdemo</title>
+</head>
+<body>
+    <h3>@Model.Message</h3>
+
+    <form method="post">
+        <button type="submit">Click to post</button>
+    </form>
+
+    <section>
+        <a href="/handlerdemo">Click To get</a>
+    </section>
+
+    @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+</body>
+</html>
